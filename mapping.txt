@@ -1,26 +1,26 @@
-head_end -> Top.Head
-head -> Rear.Head
-neck ->
-chest -> R.Scapula ??
-spine ->
-hip -> Sacral
+head_end : Top.Head
+head : Rear.Head
+neck :
+chest : R.Scapula ??
+spine :
+hip : Sacral
 
-upper_arm_l -> L.Shoulder
-lower_arm_l -> L.Elbow
-hand_l -> L.Wrist
-hand_end_l ->
+upper_arm_l : L.Shoulder
+lower_arm_l : L.Elbow
+hand_l : L.Wrist
+hand_end_l :
 
-upper_leg_l -> L.ASIS
-lower_leg_l -> L.Knee
-foot_l -> L.Ankle
-foot_end_l -> L.Toe
+upper_leg_l : L.ASIS
+lower_leg_l : L.Knee
+foot_l : L.Ankle
+foot_end_l : L.Toe
 
-upper_arm_r -> R.Shoulder
-lower_arm_r -> R.Elbow
-hand_r -> R.Wrist
-hand_end_r ->
+upper_arm_r : R.Shoulder
+lower_arm_r : R.Elbow
+hand_r : R.Wrist
+hand_end_r :
 
-upper_leg_r -> R.ASIS
-lower_leg_r -> R.Knee
-foot_r -> R.Ankle
-foot_end_r -> R.Toe
+upper_leg_r : R.ASIS
+lower_leg_r : R.Knee
+foot_r : R.Ankle
+foot_end_r : R.Toe
