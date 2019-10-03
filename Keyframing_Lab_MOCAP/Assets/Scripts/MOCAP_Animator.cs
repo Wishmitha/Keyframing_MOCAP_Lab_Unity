@@ -8,32 +8,27 @@ public class MOCAP_Animator : MonoBehaviour
     public GameObject game_obj;
     public TextAsset mocap_data;
 
+    private string[] frames;
+    private int frame_num = 1;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        frames = mocap_data.text.Split('\n');
     }
 
     // Update is called once per frame
     void Update()
     {
         Animate();
+        frame_num++;
     }
 
     private void Animate()
     {
-        string[] records = mocap_data.text.Split('\n');
-        for (int i = 1; i < records.Length; i++)
-        {
-            string[] fields = records[i].Split(',');
-            game_obj.transform.Rotate(float.Parse(fields[0]), float.Parse(fields[1]), float.Parse(fields[2]));
-            game_obj.transform.position = new Vector3(float.Parse(fields[0]), float.Parse(fields[1]), float.Parse(fields[2]));
-            //Debug.Log(fields[1]);
-        }
-    }
-
-    private void ReadCSV()
-    {
-
+        string[] coordinates = frames[frame_num].Split(',');
+        Vector3 pos = new Vector3(float.Parse(coordinates[0]), float.Parse(coordinates[1]), float.Parse(coordinates[2]));
+        game_obj.transform.position = pos;
+        Debug.Log(float.Parse(coordinates[0]));
     }
 }
