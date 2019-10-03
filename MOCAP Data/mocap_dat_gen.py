@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import json
-import sys,os
+import os
 
 dirname = os.path.dirname(__file__)
 
