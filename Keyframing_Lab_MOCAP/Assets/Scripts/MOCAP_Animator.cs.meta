@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - selector: {fileID: -927199367670048503, guid: b7f35f3678e3c0e48a0b06f00e3b66d1,
+  - rigged_model: {fileID: -927199367670048503, guid: b7f35f3678e3c0e48a0b06f00e3b66d1,
       type: 3}
   - mocap_data: {instanceID: 0}
   executionOrder: 0
